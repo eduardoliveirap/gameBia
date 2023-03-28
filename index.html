@@ -1,22 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aula 7</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-    <div class="topo">
-        <h1>Em que número <span>Bia</span> está pensando?</h1>
-        <img src="images/image 1.png" alt="">
-    </div>
-    <input type="number" id="sugestao">
-    <button onClick="checarTentativa()">Tentar</button>
-    
+        <div id="bia-pensa">
+            <h1>Em que número <span>Bia</span> está pensando?</h1>
+            <img src="images/bia.png" id="bia">
+        </div>
+        <div class="input-palp" id="input">
+            <input type="text" id="txtpalp" onkeypress="enviar()">
+            <p id="enter">Aperte Enter para mandar o palpite</p>
+        </div>
+        <div class="palpites">            
+            <h3>Seus palpites:</h3>
+            <p id="lista-palp"></p>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
